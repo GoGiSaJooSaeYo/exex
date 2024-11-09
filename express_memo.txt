@@ -1,0 +1,18 @@
+express 객체(?)의 get 메서드
+  express.get('/', (req,res)=>{
+    res.send('~~~~~')
+  }) 와 같이 가능, 여기서 ~~~에 html 코드를 넣으면 (ex. <h1>아<h1>) 반영됨,
+  ~~dp json 자료형을 넣으려면 .send({ ~~ })또는 .json({ ~~~ }) 사용
+
+    get에서 /:변수이름 -> 라우팅에 변수를 동적으로 받을 수 있음
+      req.params -> 변수를 입력하면 { 변수 : 값 }(key : value 형태, json data?)의 형태의req.params 객체가 생성
+        req.params.변수 로 변수의 값을 참조, 혹은 const { 변수이름 } = req.params로 바로 변수에 값을 저장 가능
+      req.query -> 변수를 ?key=value&key=value.... 와 같이 입력 받아서 json data로 저장.
+
+    poset에서 /:변수이름
+      req.params ->
+      req.body -> 
+     
+      
+    
+                
